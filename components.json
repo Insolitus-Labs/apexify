@@ -8,7 +8,11 @@
     "css": "app/globals.css",
     "baseColor": "neutral",
     "cssVariables": true,
-    "prefix": "ui"
+    "prefix": "ui",
+    "fonts": {
+      "body": "Inter, sans-serif",
+      "heading": "Poppins, sans-serif"
+    }
   },
   "aliases": {
     "components": "@/components",
