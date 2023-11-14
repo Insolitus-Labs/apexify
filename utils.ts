@@ -2,28 +2,27 @@ import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
 
 /**
- * Utility function to merge Tailwind classes with conditional logic.
- * It removes conflicting classes and ensures proper merging.
+ * Merges Tailwind classes while resolving conflicts.
  *
- * @param inputs - Class values to be merged
- * @returns A properly merged class string
+ * @param inputs - List of class values
+ * @returns A merged class string
  */
 export function cn(...inputs: ClassValue[]): string {
   return twMerge(clsx(inputs));
 }
 
 /**
- * Utility function to conditionally apply classes based on a boolean value.
+ * Conditionally applies a class based on a boolean value.
  *
- * @param condition - Boolean condition to apply the class
+ * @param condition - Boolean to determine the applied class
  * @param trueClass - Class to apply if condition is true
  * @param falseClass - Class to apply if condition is false (optional)
- * @returns The selected class string
+ * @returns Selected class string
  */
 export function conditionalClass(
   condition: boolean,
   trueClass: string,
-  falseClass: string = ""
+  falseClass?: string
 ): string {
-  return condition ? trueClass : falseClass;
-}  
+  return condition ? trueClass : falseClass || "";
+}
