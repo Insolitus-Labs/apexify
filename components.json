@@ -27,7 +27,8 @@
   "iconLibrary": "lucide",
   "themes": {
     "light": "theme-light",
-    "dark": "theme-dark"
+    "dark": "theme-dark",
+    "system": "theme-system"
   },
   "options": {
     "useCVA": true,
