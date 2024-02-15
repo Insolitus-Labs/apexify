@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "test": "jest"
   },
   "dependencies": {
     "next": "14.2.16",
@@ -15,14 +16,13 @@
     "react-dom": "^18"
   },
   "devDependencies": {
+    "jest": "latest",
+    "ts-jest": "latest",
+    "@types/jest": "latest",
     "eslint": "latest",
-    "eslint-config-next": "latest",
     "husky": "latest",
     "lint-staged": "latest",
     "prettier": "latest",
     "typescript": "^5"
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx}": ["eslint --fix", "prettier --write"]
   }
 }
