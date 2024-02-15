@@ -4,6 +4,7 @@ import dynamic from "next/dynamic"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import SkeletonLoader from "../components/SkeletonLoader"
+import ErrorBoundary from "../components/ErrorBoundary"
 
 const DynamicHero = dynamic(() => import("../components/Hero"), { ssr: false })
 const DynamicDashboard = dynamic(() => import("../components/Dashboard"), { ssr: false })
@@ -23,17 +24,19 @@ export default function Home() {
       </Head>
       <main className="min-h-screen">
         <Header />
-        <Suspense fallback={<SkeletonLoader />}>
-          <DynamicHero />
-        </Suspense>
-        <DynamicDashboard />
-        <Suspense fallback={<SkeletonLoader />}>
-          <DynamicWhyApexify />
-          <DynamicHowItWorks />
-          <DynamicSmartDeFiEngine />
-          <DynamicIntegrations />
-          <DynamicFAQs />
-        </Suspense>
+        <ErrorBoundary fallback={<div>Something went wrong loading this section.</div>}>
+          <Suspense fallback={<SkeletonLoader />}>
+            <DynamicHero />
+          </Suspense>
+          <DynamicDashboard />
+          <Suspense fallback={<SkeletonLoader />}>
+            <DynamicWhyApexify />
+            <DynamicHowItWorks />
+            <DynamicSmartDeFiEngine />
+            <DynamicIntegrations />
+            <DynamicFAQs />
+          </Suspense>
+        </ErrorBoundary>
         <Footer />
       </main>
     </>
