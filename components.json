@@ -16,6 +16,9 @@
   },
   "aliases": {
     "components": "@/components",
+    "modals": "@/components/modals",
+    "buttons": "@/components/buttons",
+    "inputs": "@/components/inputs",
     "utils": "@/lib/utils",
     "ui": "@/components/ui",
     "lib": "@/lib",
