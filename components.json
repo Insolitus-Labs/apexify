@@ -36,6 +36,7 @@
   "options": {
     "useCVA": true,
     "useRadix": true,
-    "generateIndexFiles": true
+    "generateIndexFiles": true,
+    "enableAnimations": true
   }
 }
