@@ -12,17 +12,8 @@
   },
   "dependencies": {
     "next": "14.2.16",
+    "next-compression": "latest",
     "react": "^18",
     "react-dom": "^18"
-  },
-  "devDependencies": {
-    "jest": "latest",
-    "ts-jest": "latest",
-    "@types/jest": "latest",
-    "eslint": "latest",
-    "husky": "latest",
-    "lint-staged": "latest",
-    "prettier": "latest",
-    "typescript": "^5"
   }
 }
