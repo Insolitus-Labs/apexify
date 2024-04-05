@@ -8,12 +8,21 @@
     "start": "next start",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "format": "prettier --write .",
-    "test": "jest"
+    "test": "jest",
+    "commit": "cz"
   },
   "dependencies": {
     "next": "14.2.16",
-    "next-compression": "latest",
     "react": "^18",
     "react-dom": "^18"
+  },
+  "devDependencies": {
+    "commitizen": "latest",
+    "cz-conventional-changelog": "latest"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   }
 }
