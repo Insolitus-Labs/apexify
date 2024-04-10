@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import { Suspense } from "react"
+import { Suspense, lazy } from "react"
 import Head from "next/head"
 import dynamic from "next/dynamic"
 import { useRouter } from "next/router"
@@ -13,8 +13,10 @@ const DynamicDashboard = dynamic(() => import("../components/Dashboard"), { ssr:
 const DynamicWhyApexify = dynamic(() => import("../components/WhyApexify"), { ssr: false })
 const DynamicHowItWorks = dynamic(() => import("../components/HowItWorks"), { ssr: false })
 const DynamicSmartDeFiEngine = dynamic(() => import("../components/SmartDeFiEngine"), { ssr: false })
-const DynamicIntegrations = dynamic(() => import("../components/Integrations"), { ssr: false })
-const DynamicFAQs = dynamic(() => import("../components/FAQs"), { ssr: false })
+
+// Load these components later to improve FCP
+const LazyIntegrations = lazy(() => import("../components/Integrations"))
+const LazyFAQs = lazy(() => import("../components/FAQs"))
 
 export default function Home() {
   const router = useRouter()
@@ -46,10 +48,12 @@ export default function Home() {
             <DynamicWhyApexify />
             <DynamicHowItWorks />
             <DynamicSmartDeFiEngine />
-            <DynamicIntegrations />
-            <DynamicFAQs />
           </Suspense>
         </ErrorBoundary>
+        <Suspense fallback={<SkeletonLoader />}>
+          <LazyIntegrations />
+          <LazyFAQs />
+        </Suspense>
         <Footer />
       </main>
     </>
