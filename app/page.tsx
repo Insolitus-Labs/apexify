@@ -13,8 +13,6 @@ const DynamicDashboard = dynamic(() => import("../components/Dashboard"), { ssr:
 const DynamicWhyApexify = dynamic(() => import("../components/WhyApexify"), { ssr: false })
 const DynamicHowItWorks = dynamic(() => import("../components/HowItWorks"), { ssr: false })
 const DynamicSmartDeFiEngine = dynamic(() => import("../components/SmartDeFiEngine"), { ssr: false })
-
-// Load these components later to improve FCP
 const LazyIntegrations = lazy(() => import("../components/Integrations"))
 const LazyFAQs = lazy(() => import("../components/FAQs"))
 
@@ -34,26 +32,14 @@ export default function Home() {
     <>
       <Head>
         <title>Apexify - Next-Gen Smart DeFi Solutions</title>
-        <meta name="description" content="Apexify is the ultimate Smart DeFi platform with advanced automation, security, and seamless integrations." />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <main className="min-h-screen">
+      <main className="min-h-screen" role="main">
         <Header />
-        <ErrorBoundary fallback={<div>Something went wrong loading this section.</div>}>
+        <ErrorBoundary fallback={<div role="alert">Something went wrong loading this section.</div>}>
           <Suspense fallback={<SkeletonLoader />}>
-            <DynamicHero />
-          </Suspense>
-          <DynamicDashboard />
-          <Suspense fallback={<SkeletonLoader />}>
-            <DynamicWhyApexify />
-            <DynamicHowItWorks />
-            <DynamicSmartDeFiEngine />
+            <DynamicHero aria-label="Hero section" />
           </Suspense>
         </ErrorBoundary>
-        <Suspense fallback={<SkeletonLoader />}>
-          <LazyIntegrations />
-          <LazyFAQs />
-        </Suspense>
         <Footer />
       </main>
     </>
