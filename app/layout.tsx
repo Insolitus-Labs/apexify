@@ -1,6 +1,7 @@
 import "./globals.css"
 import ParticlesBackground from "../components/ParticlesBackground"
 import ScrollToTop from "../components/ScrollToTop"
+import GlobalLoader from "../components/GlobalLoader"
 import type { Metadata } from "next"
 import type React from "react"
 
@@ -25,6 +26,7 @@ export default function RootLayout({
       </head>
       <body className="bg-[#0A0A0A]">
         <ParticlesBackground />
+        <GlobalLoader />
         <div className="relative z-10">{children}</div>
         <ScrollToTop />
       </body>
