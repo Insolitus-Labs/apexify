@@ -2,27 +2,13 @@
   "name": "my-v0-project",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "format": "prettier --write .",
-    "test": "jest",
-    "commit": "cz"
-  },
   "dependencies": {
     "next": "14.2.16",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
-    "commitizen": "latest",
-    "cz-conventional-changelog": "latest"
-  },
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog"
-    }
+    "@tailwindcss/forms": "latest",
+    "@tailwindcss/typography": "latest"
   }
 }
