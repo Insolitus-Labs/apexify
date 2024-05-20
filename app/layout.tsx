@@ -24,10 +24,10 @@ export default function RootLayout({
           type="image/jpeg"
         />
       </head>
-      <body className="bg-[#0A0A0A]">
+      <body className="bg-[#0A0A0A]" aria-live="polite">
         <ParticlesBackground />
         <GlobalLoader />
-        <div className="relative z-10">{children}</div>
+        <div className="relative z-10" role="main">{children}</div>
         <ScrollToTop />
       </body>
     </html>
