@@ -3,9 +3,6 @@ import { twMerge } from "tailwind-merge";
 
 /**
  * Merges Tailwind classes while resolving conflicts.
- *
- * @param inputs - List of class values
- * @returns A merged class string
  */
 export function cn(...inputs: ClassValue[]): string {
   return twMerge(clsx(inputs));
@@ -13,11 +10,6 @@ export function cn(...inputs: ClassValue[]): string {
 
 /**
  * Conditionally applies a class based on a boolean value.
- *
- * @param condition - Boolean to determine the applied class
- * @param trueClass - Class to apply if condition is true
- * @param falseClass - Class to apply if condition is false (optional)
- * @returns Selected class string
  */
 export function conditionalClass(
   condition: boolean,
@@ -25,4 +17,16 @@ export function conditionalClass(
   falseClass?: string
 ): string {
   return condition ? trueClass : falseClass || "";
+}
+
+/**
+ * Determines if the user prefers dark mode.
+ * 
+ * @returns True if dark mode is preferred, otherwise false.
+ */
+export function isDarkMode(): boolean {
+  if (typeof window !== "undefined") {
+    return window.matchMedia("(prefers-color-scheme: dark)").matches;
+  }
+  return false;
 }
