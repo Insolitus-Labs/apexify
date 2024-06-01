@@ -24,7 +24,8 @@ body {
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
 }
 
 h1 { font-size: 2.5rem; line-height: 1.2; }
@@ -45,23 +46,10 @@ p { font-weight: 400; }
   animation: gradient 3s ease infinite;
 }
 
-/* Sections */
-main { position: relative; z-index: 10; }
-section { position: relative; z-index: 20; }
-header {
-  background-color: rgba(10, 10, 10, 0.8) !important;
-  backdrop-filter: blur(8px);
-}
-
-#tsparticles { position: fixed !important; }
-
 /* Dashboard Styles */
 .dashboard-content { background-color: #1a1a1a; }
 .dashboard-sidebar { background-color: #0f0f0f; }
-.suggestion-card {
-  background-color: #2a2a2a;
-  transition: background-color 0.3s ease;
-}
+.suggestion-card { background-color: #2a2a2a; transition: background-color 0.3s ease; }
 .suggestion-card:hover { background-color: #3a3a3a; }
 
 html { scroll-behavior: smooth; }
