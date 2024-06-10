@@ -15,19 +15,43 @@ body {
   background-color: rgb(var(--background-rgb));
   min-height: 100vh;
   overflow-x: hidden;
-  font-family: 'Inter', sans-serif; /* Added Inter font */
-}
-
-body {  
-  position: relative;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
   font-family: 'Inter', sans-serif;
 }
 
-h1 { font-size: 2.5rem; line-height: 1.2; }
-h2 { font-size: 2rem; line-height: 1.25; }
-h3 { font-size: 1.5rem; line-height: 1.3; }
-p { font-weight: 400; }
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-rgb: 15, 15, 15;
+  }
+
+  .dashboard-content { background-color: #181818; }
+  .dashboard-sidebar { background-color: #121212; }
+  .suggestion-card { background-color: #222; }
+  .suggestion-card:hover { background-color: #333; }
+}
+
+/* Dark Mode Button Improvements */
+@media (prefers-color-scheme: dark) {
+  button {
+    background-color: #333;
+    color: #fff;
+  }
+  button:hover {
+    background-color: #444;
+  }
+}
+
+
+button {
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
