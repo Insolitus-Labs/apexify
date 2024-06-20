@@ -55,3 +55,29 @@ button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
+
+header {
+  background-color: rgba(10, 10, 10, 0.8) !important;
+  backdrop-filter: blur(12px);
+  transition: backdrop-filter 0.3s ease-in-out;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #0a0a0a; }
+::-webkit-scrollbar-thumb {
+  background: #3b82f6;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover { background: #8b5cf6; }
