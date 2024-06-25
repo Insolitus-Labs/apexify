@@ -81,3 +81,19 @@ html {
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover { background: #8b5cf6; }
+
+
+@media (max-width: 768px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.75rem; }
+  h3 { font-size: 1.3rem; }
+
+  .dashboard-content { padding: 1rem; }
+  .dashboard-sidebar { display: none; }
+}
+
+@media (max-width: 768px) {
+  header {
+    height: 60px;
+  }
+}
