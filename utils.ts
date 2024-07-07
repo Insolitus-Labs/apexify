@@ -26,5 +26,4 @@ export function conditionalClass(
   falseClass: string = ""
 ): string {
   return condition ? trueClass : falseClass;
-}
-  
+}  
