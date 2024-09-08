@@ -21,12 +21,28 @@ export function conditionalClass(
 
 /**
  * Determines if the user prefers dark mode.
- * 
- * @returns True if dark mode is preferred, otherwise false.
  */
 export function isDarkMode(): boolean {
   if (typeof window !== "undefined") {
     return window.matchMedia("(prefers-color-scheme: dark)").matches;
   }
   return false;
+}
+
+/**
+ * Debounces a function to prevent excessive execution.
+ *
+ * @param func - The function to debounce
+ * @param delay - The debounce delay in milliseconds
+ * @returns A debounced function
+ */
+export function debounce<T extends (...args: any[]) => void>(
+  func: T,
+  delay: number
+): (...args: Parameters<T>) => void {
+  let timer: NodeJS.Timeout;
+  return (...args: Parameters<T>) => {
+    clearTimeout(timer);
+    timer = setTimeout(() => func(...args), delay);
+  };
 }
