@@ -8,14 +8,26 @@
     "css": "app/globals.css",
     "baseColor": "neutral",
     "cssVariables": true,
-    "prefix": ""
+    "prefix": "ui"
   },
   "aliases": {
     "components": "@/components",
     "utils": "@/lib/utils",
     "ui": "@/components/ui",
     "lib": "@/lib",
-    "hooks": "@/hooks"
+    "hooks": "@/hooks",
+    "context": "@/context",
+    "services": "@/services",
+    "assets": "@/assets"
   },
-  "iconLibrary": "lucide"
+  "iconLibrary": "lucide",
+  "themes": {
+    "light": "theme-light",
+    "dark": "theme-dark"
+  },
+  "options": {
+    "useCVA": true,
+    "useRadix": true,
+    "generateIndexFiles": true
+  }
 }
