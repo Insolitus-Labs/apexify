@@ -31,10 +31,6 @@ export function isDarkMode(): boolean {
 
 /**
  * Debounces a function to prevent excessive execution.
- *
- * @param func - The function to debounce
- * @param delay - The debounce delay in milliseconds
- * @returns A debounced function
  */
 export function debounce<T extends (...args: any[]) => void>(
   func: T,
@@ -45,4 +41,16 @@ export function debounce<T extends (...args: any[]) => void>(
     clearTimeout(timer);
     timer = setTimeout(() => func(...args), delay);
   };
+}
+
+/**
+ * Detects if the user is on a touch-enabled device.
+ * 
+ * @returns True if the device supports touch interactions.
+ */
+export function isTouchDevice(): boolean {
+  return (
+    typeof window !== "undefined" &&
+    ("ontouchstart" in window || navigator.maxTouchPoints > 0)
+  );
 }
