@@ -18,3 +18,12 @@ export function conditionalClass(
 ): string {
   return condition ? trueClass : falseClass || "";
 }
+
+
+
+export function isDarkMode(): boolean {
+  if (typeof window !== "undefined") {
+    return window.matchMedia("(prefers-color-scheme: dark)").matches;
+  }
+  return false;
+}
