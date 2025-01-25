@@ -39,3 +39,11 @@ export function debounce<T extends (...args: any[]) => void>(
     timer = setTimeout(() => func(...args), delay);
   };
 }
+
+
+export function isTouchDevice(): boolean {
+  return (
+    typeof window !== "undefined" &&
+    ("ontouchstart" in window || navigator.maxTouchPoints > 0)
+  );
+}
