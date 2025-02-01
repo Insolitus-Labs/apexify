@@ -47,3 +47,11 @@ export function isTouchDevice(): boolean {
     ("ontouchstart" in window || navigator.maxTouchPoints > 0)
   );
 }
+
+
+export function prefersReducedMotion(): boolean {
+  if (typeof window !== "undefined") {
+    return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  }
+  return false;
+}
