@@ -55,3 +55,8 @@ export function prefersReducedMotion(): boolean {
   }
   return false;
 }
+
+
+export function isOnline(): boolean {
+  return typeof navigator !== "undefined" && navigator.onLine;
+}
