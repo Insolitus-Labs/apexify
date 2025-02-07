@@ -60,8 +60,8 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
-- **Twitter:** [@Apexify_AI](https://x.com/apexify_ai)(https://twitter.com/ApexifyDeFi)
-- **Website:** [Apexify](https://v0-apexify-bsfxiih01e7-dpdvzv.vercel.app/)(https://apexify.io)
+- **Twitter:** [@Apexify_AI](https://twitter.com/apexify_ai)
+- **Website:** [Apexify](https://v0-apexify-bsfxiih01e7-dpdvzv.vercel.app/)
 - **Discord:** [Join our community](https://discord.gg/apexify)
 
 ## Acknowledgments
