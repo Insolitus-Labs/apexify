@@ -7,7 +7,7 @@ import IOSWindow from "./IOSWindow"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 
 export default function Dashboard() {
-  const [activeTab, setActiveTab] = useState("dashboard")
+  const [activeTab, setActiveTab] = useState("dashboard") 
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false)
   const [scrollPosition, setScrollPosition] = useState(0)
   const dashboardRef = useRef(null)
