@@ -3,7 +3,7 @@ import ParticlesBackground from "../components/ParticlesBackground"
 import type { Metadata } from "next"
 import type React from "react" // Import React
 
-export const metadata: Metadata = {
+export const metadata: Metadata = { 
   title: "APEXIFY",
   description: "AI-Powered Yield Farming Across Solana",
 }
