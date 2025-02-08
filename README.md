@@ -11,7 +11,7 @@ Apexify is an AI-powered yield optimization engine built for the Solana blockcha
 - **Smart Auto-Compounding** – Reinvests earned rewards automatically.
 - **Dynamic Risk Management** – Reacts to market conditions instantly.
 - **Non-Custodial Security** – Users retain full control over their funds.
-- **Seamless DeFi Integration** – Supports Raydium, Orca, Solend, Marinade, and Drift.
+- **Seamless DeFi Integration** – Supports Raydium, Orca, Solend, Marinade, and Drift. 
 
 ## Quick Start
 
