@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+body { 
   font-family: Arial, Helvetica, sans-serif;
 }
 
