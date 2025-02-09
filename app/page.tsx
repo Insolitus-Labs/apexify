@@ -11,7 +11,7 @@ const DynamicSmartDeFiEngine = dynamic(() => import("../components/SmartDeFiEngi
 const DynamicIntegrations = dynamic(() => import("../components/Integrations"), { ssr: false })
 const DynamicFAQs = dynamic(() => import("../components/FAQs"), { ssr: false })
 
-export default function Home() {
+export default function Home() { 
   return (
     <main className="min-h-screen">
       <Header />
