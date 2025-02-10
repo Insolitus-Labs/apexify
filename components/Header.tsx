@@ -10,7 +10,7 @@ const menuItems = [
   { name: "Why Apexify", href: "#why-apexify" },
   { name: "How It Works", href: "#how-it-works" },
   { name: "FAQs", href: "#faqs" },
-]
+] 
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
