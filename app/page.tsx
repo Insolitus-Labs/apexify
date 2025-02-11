@@ -4,7 +4,7 @@ import Header from "../components/Header"
 import Footer from "../components/Footer" 
 
 const DynamicHero = dynamic(() => import("../components/Hero"), { ssr: false })
-const DynamicDashboard = dynamic(() => import("../components/Dashboard"), { ssr: false })
+const DynamicDashboard = dynamic(() => import("../components/Dashboard"), { ssr: false }) 
 const DynamicWhyApexify = dynamic(() => import("../components/WhyApexify"), { ssr: false })
 const DynamicHowItWorks = dynamic(() => import("../components/HowItWorks"), { ssr: false })
 const DynamicSmartDeFiEngine = dynamic(() => import("../components/SmartDeFiEngine"), { ssr: false })
