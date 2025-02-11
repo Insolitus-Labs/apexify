@@ -4,7 +4,7 @@ import { motion, useInView, useScroll, useTransform } from "framer-motion"
 import { useCallback, useRef } from "react"
 
 export default function Hero() {
-  const ref = useRef(null)
+  const ref = useRef(null)  
   const isInView = useInView(ref, { once: true, amount: 0.3 })
 
   const scrollToDashboard = useCallback(() => {
