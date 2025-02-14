@@ -27,3 +27,4 @@ export function conditionalClass(
 ): string {
   return condition ? trueClass : falseClass;
 }
+  
