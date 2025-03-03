@@ -18,3 +18,10 @@ export function conditionalClass(
 ): string {
   return condition ? trueClass : falseClass;
 }
+
+/**
+ * Joins non-null or non-undefined class names.
+ */
+export function joinClass(...classes: (string | undefined | null)[]): string {
+  return classes.filter(Boolean).join(" ");
+}
