@@ -25,3 +25,14 @@ export function conditionalClass(
 export function joinClass(...classes: (string | undefined | null)[]): string {
   return classes.filter(Boolean).join(" ");
 }
+
+/**
+ * Toggles a class name inside a class string.
+ */
+export function toggleClass(
+  base: string,
+  condition: boolean,
+  toggledClass: string
+): string {
+  return condition ? `${base} ${toggledClass}` : base;
+}
