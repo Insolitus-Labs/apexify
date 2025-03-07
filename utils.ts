@@ -50,3 +50,14 @@ export function classListToArray(classString: string): string[] {
 export function removeClass(classString: string, classToRemove: string): string {
   return classListToArray(classString).filter(cls => cls !== classToRemove).join(" ");
 }
+
+/**
+ * Appends a class to a class string if it is not already present.
+ */
+export function appendClass(classString: string, newClass: string): string {
+  const classList = classListToArray(classString);
+  if (!classList.includes(newClass)) {
+    classList.push(newClass);
+  }
+  return classList.join(" ");
+}
