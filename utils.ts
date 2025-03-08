@@ -61,3 +61,14 @@ export function appendClass(classString: string, newClass: string): string {
   }
   return classList.join(" ");
 }
+
+/**
+ * Prepends a class to a class string if it is not already present.
+ */
+export function prependClass(classString: string, newClass: string): string {
+  const classList = classListToArray(classString);
+  if (!classList.includes(newClass)) {
+    classList.unshift(newClass);
+  }
+  return classList.join(" ");
+}
