@@ -72,3 +72,10 @@ export function prependClass(classString: string, newClass: string): string {
   }
   return classList.join(" ");
 }
+
+/**
+ * Checks if a class exists in a class string.
+ */
+export function hasClass(classString: string, className: string): boolean {
+  return classListToArray(classString).includes(className);
+}
