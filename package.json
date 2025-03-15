@@ -12,3 +12,26 @@ module.exports = {
     require("@tailwindcss/typography"),
   ],
 }
+// pages/index.js
+import React from "react";
+
+const Home = () => {
+  return (
+    <div className="min-h-screen bg-gray-900 text-white">
+      <header className="p-10 bg-gray-800">
+        <h1 className="text-3xl font-bold">Welcome to My V0 Project</h1>
+      </header>
+      <main className="flex-grow p-10">
+        <section className="text-center">
+          <h2 className="text-2xl mb-4">Hero Section</h2>
+          <p>Start building your application here!</p>
+        </section>
+      </main>
+      <footer className="p-4 bg-gray-800 text-center">
+        <p>&copy; 2025 My V0 Project</p>
+      </footer>
+    </div>
+  );
+};
+
+export default Home;
