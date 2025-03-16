@@ -12,6 +12,14 @@ module.exports = {
     require("@tailwindcss/typography"),
   ],
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-900 text-white;
+}
 // pages/index.js
 import React from "react";
 
