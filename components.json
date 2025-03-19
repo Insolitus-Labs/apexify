@@ -10,33 +10,8 @@
     "cssVariables": true,
     "prefix": "ui",
     "fonts": {
-      "body": "Inter, sans-serif",
+      "body": "Inter, sans-serif", 
       "heading": "Poppins, sans-serif"
     }
-  },
-  "aliases": {
-    "components": "@/components",
-    "modals": "@/components/modals",
-    "buttons": "@/components/buttons",
-    "inputs": "@/components/inputs",
-    "utils": "@/lib/utils",
-    "ui": "@/components/ui",
-    "lib": "@/lib",
-    "hooks": "@/hooks",
-    "context": "@/context",
-    "services": "@/services",
-    "assets": "@/assets"
-  },
-  "iconLibrary": "lucide",
-  "themes": {
-    "light": "theme-light",
-    "dark": "theme-dark",
-    "system": "theme-system"
-  },
-  "options": {
-    "useCVA": true,
-    "useRadix": true,
-    "generateIndexFiles": true,
-    "enableAnimations": true
   }
 }
