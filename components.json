@@ -10,8 +10,17 @@
     "cssVariables": true,
     "prefix": "ui",
     "fonts": {
-      "body": "Inter, sans-serif", 
+      "body": "Inter, sans-serif",
       "heading": "Poppins, sans-serif"
+    },
+    "colors": {
+      "primary": "#1D4ED8",
+      "secondary": "#9333EA"
+    },
+    "borderRadius": {
+      "DEFAULT": "8px",
+      "sm": "4px",
+      "lg": "16px"
     }
   }
 }
