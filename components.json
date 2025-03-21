@@ -21,6 +21,15 @@
       "DEFAULT": "8px",
       "sm": "4px",
       "lg": "16px"
+    },
+    "spacing": {
+      "4": "1rem",
+      "8": "2rem",
+      "16": "4rem"
+    },
+    "container": {
+      "center": true,
+      "padding": "1rem"
     }
   }
 }
