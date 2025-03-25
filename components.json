@@ -49,6 +49,11 @@
         "h2": "text-2xl sm:text-3xl",
         "h3": "text-xl sm:text-2xl"
       }
+    },
+    "animations": {
+      "bounce": "bounce 1s ease-in-out infinite",
+      "fadeIn": "fadeIn 2s ease-in-out",
+      "slideUp": "slideUp 1s ease-in-out"
     }
   }
 }
