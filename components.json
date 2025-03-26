@@ -15,7 +15,10 @@
     },
     "colors": {
       "primary": "#1D4ED8",
-      "secondary": "#9333EA"
+      "secondary": "#9333EA",
+      "accent": "#F59E0B",
+      "danger": "#DC2626",
+      "success": "#10B981"
     },
     "borderRadius": {
       "DEFAULT": "8px",
@@ -45,9 +48,9 @@
         "h3": "text-2xl font-medium"
       },
       "responsive": {
-        "h1": "text-3xl sm:text-4xl",
-        "h2": "text-2xl sm:text-3xl",
-        "h3": "text-xl sm:text-2xl"
+        "h1": "text-3xl sm:text-4xl md:text-5xl",
+        "h2": "text-2xl sm:text-3xl md:text-4xl",
+        "h3": "text-xl sm:text-2xl md:text-3xl"
       }
     },
     "animations": {
