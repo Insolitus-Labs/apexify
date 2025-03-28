@@ -39,7 +39,8 @@
       "button": {
         "default": "bg-primary text-white py-2 px-4 rounded",
         "hover": "hover:bg-secondary",
-        "focus": "focus:ring-4 focus:ring-secondary"
+        "focus": "focus:ring-4 focus:ring-secondary",
+        "focus-visible": "focus-visible:ring-2 focus-visible:ring-primary"
       }
     },
     "typography": {
