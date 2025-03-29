@@ -23,12 +23,14 @@
     "borderRadius": {
       "DEFAULT": "8px",
       "sm": "4px",
-      "lg": "16px"
+      "lg": "16px",
+      "xl": "24px"
     },
     "spacing": {
       "4": "1rem",
       "8": "2rem",
-      "16": "4rem"
+      "16": "4rem",
+      "32": "8rem"
     },
     "container": {
       "center": true,
