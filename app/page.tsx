@@ -41,7 +41,7 @@ export default function Home() {
           </Suspense>
         </ErrorBoundary>
         <Footer />
-      </main>
+      </main>  
     </>
   )
 }
