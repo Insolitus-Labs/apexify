@@ -38,10 +38,11 @@ export default function Home() {
         <ErrorBoundary fallback={<div role="alert">Something went wrong loading this section.</div>}>
           <Suspense fallback={<SkeletonLoader />}>
             <DynamicHero aria-label="Hero section" />
+            <DynamicDashboard />
           </Suspense>
         </ErrorBoundary>
         <Footer />
-      </main>  
+      </main>
     </>
   )
 }
