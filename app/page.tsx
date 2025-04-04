@@ -39,6 +39,8 @@ export default function Home() {
           <Suspense fallback={<SkeletonLoader />}>
             <DynamicHero aria-label="Hero section" />
             <DynamicDashboard />
+            <LazyIntegrations />
+            <LazyFAQs />
           </Suspense>
         </ErrorBoundary>
         <Footer />
