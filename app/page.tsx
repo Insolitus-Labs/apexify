@@ -32,6 +32,10 @@ export default function Home() {
     <>
       <Head>
         <title>Apexify - Next-Gen Smart DeFi Solutions</title>
+        <meta name="description" content="Apexify provides next-gen smart DeFi solutions for seamless yield farming." />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Apexify - Next-Gen Smart DeFi Solutions" />
+        <meta property="og:description" content="Automate and optimize your yield farming with Apexify." />
       </Head>
       <main className="min-h-screen" role="main">
         <Header />
@@ -46,5 +50,5 @@ export default function Home() {
         <Footer />
       </main>
     </>
-  )    
+  )
 }
