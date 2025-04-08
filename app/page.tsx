@@ -10,8 +10,8 @@ import ErrorBoundary from "../components/ErrorBoundary"
 
 const DynamicHero = dynamic(() => import("../components/Hero"), { ssr: false })
 const DynamicDashboard = dynamic(() => import("../components/Dashboard"), { ssr: false })
-const DynamicWhyApexify = dynamic(() => import("../components/WhyApexify"), { ssr: false })
-const DynamicHowItWorks = dynamic(() => import("../components/HowItWorks"), { ssr: false })
+const DynamicWhyApexify = lazy(() => import("../components/WhyApexify"))
+const DynamicHowItWorks = lazy(() => import("../components/HowItWorks"))
 const DynamicSmartDeFiEngine = dynamic(() => import("../components/SmartDeFiEngine"), { ssr: false })
 const LazyIntegrations = lazy(() => import("../components/Integrations"))
 const LazyFAQs = lazy(() => import("../components/FAQs"))
@@ -32,10 +32,6 @@ export default function Home() {
     <>
       <Head>
         <title>Apexify - Next-Gen Smart DeFi Solutions</title>
-        <meta name="description" content="Apexify provides next-gen smart DeFi solutions for seamless yield farming." />
-        <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="Apexify - Next-Gen Smart DeFi Solutions" />
-        <meta property="og:description" content="Automate and optimize your yield farming with Apexify." />
       </Head>
       <main className="min-h-screen" role="main">
         <Header />
@@ -43,6 +39,8 @@ export default function Home() {
           <Suspense fallback={<SkeletonLoader />}>
             <DynamicHero aria-label="Hero section" />
             <DynamicDashboard />
+            <DynamicWhyApexify />
+            <DynamicHowItWorks />
             <LazyIntegrations />
             <LazyFAQs />
           </Suspense>
