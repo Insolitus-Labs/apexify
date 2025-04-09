@@ -41,6 +41,7 @@ export default function Home() {
             <DynamicDashboard />
             <DynamicWhyApexify />
             <DynamicHowItWorks />
+            <DynamicSmartDeFiEngine />
             <LazyIntegrations />
             <LazyFAQs />
           </Suspense>
