@@ -43,7 +43,7 @@ export default function Home() {
             <DynamicHowItWorks />
             <DynamicSmartDeFiEngine />
             <LazyIntegrations />
-            <LazyFAQs />
+            <LazyFAQs />  
           </Suspense>
         </ErrorBoundary>
         <Footer />
