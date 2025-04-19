@@ -122,3 +122,10 @@ export function replaceClass(classString: string, oldClass: string, newClass: st
 export function mergeClassConditionally(base: string, condition: boolean, conditionalClass: string): string {
   return condition ? `${base} ${conditionalClass}` : base;
 }
+
+/**
+ * Filters out empty or undefined class names from a class string.
+ */
+export function filterEmptyClasses(classString: string): string {
+  return classString.split(/\s+/).filter(Boolean).join(" ");
+}
