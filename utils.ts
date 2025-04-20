@@ -129,3 +129,13 @@ export function mergeClassConditionally(base: string, condition: boolean, condit
 export function filterEmptyClasses(classString: string): string {
   return classString.split(/\s+/).filter(Boolean).join(" ");
 }
+
+/**
+ * Adds a class only if it doesn't exist already, else removes it.
+ */
+export function toggleClassOnCondition(classString: string, className: string): string {
+  const classList = classListToArray(classString);
+  return classList.includes(className)
+    ? classList.filter(cls => cls !== className).join(" ")
+    : [...classList, className].join(" ");
+}
