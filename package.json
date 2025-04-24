@@ -6,8 +6,9 @@
     "next": "14.2.16",
     "react": "^18",
     "react-dom": "^18",
-    "axios": "^1.3.0", // Added Axios for making HTTP requests
-    "react-query": "^3.39.0" // Added React Query for data fetching and state management
+    "axios": "^1.3.0",
+    "react-query": "^3.39.0",
+    "framer-motion": "^10.16.0" // Added Framer Motion for UI animations
   },
   "devDependencies": {
     "@tailwindcss/forms": "latest",
