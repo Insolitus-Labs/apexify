@@ -9,10 +9,11 @@
     "axios": "^1.3.0",
     "react-query": "^3.39.0",
     "framer-motion": "^10.16.0",
-    "zustand": "^4.4.0" // Added Zustand for state management
+    "zustand": "^4.4.0"
   },
   "devDependencies": {
     "@tailwindcss/forms": "latest",
-    "@tailwindcss/typography": "latest"
+    "@tailwindcss/typography": "latest",
+    "tailwindcss": "^3.4.17" // Updated Tailwind CSS to the latest version
   }
 }
