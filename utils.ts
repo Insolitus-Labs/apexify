@@ -139,3 +139,21 @@ export function toggleClassOnCondition(classString: string, className: string): 
     ? classList.filter(cls => cls !== className).join(" ")
     : [...classList, className].join(" ");
 }
+
+/**
+ * Replaces all instances of a class in a string with another class.
+ */
+export function replaceAllInstances(classString: string, oldClass: string, newClass: string): string {
+  return classListToArray(classString)
+    .map(cls => (cls === oldClass ? newClass : cls))
+    .join(" ");
+}
+
+/**
+ * Merges class strings, ensuring no duplicates and applying class conditions.
+ */
+export function mergeClasses(...classes: string[]): string {
+  return [...new Set(classes.flatMap(cls => cls.split(/\s+/)))]
+    .filter(Boolean)
+    .join(" ");
+}
