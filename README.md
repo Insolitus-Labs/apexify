@@ -61,8 +61,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 - **Twitter:** [@Apexify_AI](https://twitter.com/apexify_ai)
-- **Website:** [Apexify](https://v0-apexify-bsfxiih01e7-dpdvzv.vercel.app/)
-- **Discord:** [Join our community](https://discord.gg/apexify)
+- **Website:** [Apexify](https://www.apexify.dev/)
 
 ## Acknowledgments
 Special thanks to all contributors and the DeFi community for making this project possible.
