@@ -13,15 +13,15 @@ const sidebarItems = [
 export default function Sidebar({ activeTab, setActiveTab }) {
   return (
     <motion.div
-      className="w-64 bg-gray-900 rounded-lg p-4"
+      className="w-64 bg-gray-900 rounded-lg p-4 shadow-lg"
       initial={{ x: -50, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.5, type: "spring", stiffness: 100 }}
     >
       {sidebarItems.map((item) => (
         <motion.button
           key={item.id}
-          className={`flex items-center w-full p-3 mb-2 rounded-lg transition-colors ${
+          className={`flex items-center w-full p-3 mb-2 rounded-lg transition-colors duration-300 ${
             activeTab === item.id ? "bg-blue-600 text-white" : "text-gray-400 hover:bg-gray-800"
           }`}
           onClick={() => setActiveTab(item.id)}
@@ -35,4 +35,3 @@ export default function Sidebar({ activeTab, setActiveTab }) {
     </motion.div>
   )
 }
-
