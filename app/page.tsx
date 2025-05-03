@@ -32,6 +32,13 @@ export default function Home() {
     <>
       <Head>
         <title>Apexify - Next-Gen Smart DeFi Solutions</title>
+        <meta name="description" content="Apexify offers the latest DeFi solutions for efficient yield farming on Solana." />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Apexify - Next-Gen Smart DeFi Solutions" />
+        <meta property="og:description" content="Automate and optimize your yield farming with Apexify." />
+        <meta property="og:image" content="https://example.com/og-image.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:creator" content="@apexify" />
       </Head>
       <main className="min-h-screen" role="main">
         <Header />
@@ -42,7 +49,7 @@ export default function Home() {
             <DynamicWhyApexify />
             <DynamicHowItWorks />
             <DynamicSmartDeFiEngine />
-            <LazyIntegrations /> 
+            <LazyIntegrations />
             <LazyFAQs />
           </Suspense>
         </ErrorBoundary>
