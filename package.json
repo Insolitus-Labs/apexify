@@ -14,6 +14,9 @@
   "devDependencies": {
     "@tailwindcss/forms": "latest",
     "@tailwindcss/typography": "latest",
-    "tailwindcss": "^3.4.17" // Updated Tailwind CSS to the latest version
+    "tailwindcss": "^3.4.17"
+  },
+  "dependencies": {
+    "react-hot-toast": "^2.4.0" // Added React Hot Toast for easy notifications
   }
 }
