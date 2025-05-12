@@ -211,3 +211,21 @@ export function prependClass(classString: string, newClass: string): string {
   }
   return classList.join(" ");
 }
+
+/**
+ * Checks if a class exists in a class string.
+ */
+export function hasClass(classString: string, className: string): boolean {
+  return classListToArray(classString).includes(className);
+}
+
+/**
+ * Toggles a class on/off within a class string.
+ */
+export function toggleClassValue(classString: string, className: string): string {
+  const classList = classListToArray(classString);
+  if (classList.includes(className)) {
+    return classList.filter(cls => cls !== className).join(" ");
+  }
+  return [...classList, className].join(" ");
+}
