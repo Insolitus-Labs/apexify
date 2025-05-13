@@ -60,7 +60,6 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
-- **Twitter:** [@Apexify_AI](https://twitter.com/apexify_ai)
 - **Website:** [apexify.dev](https://www.apexify.dev/)
 
 ## Acknowledgments
