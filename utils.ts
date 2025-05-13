@@ -229,3 +229,19 @@ export function toggleClassValue(classString: string, className: string): string
   }
   return [...classList, className].join(" ");
 }
+
+/**
+ * Removes all instances of a class from a class string.
+ */
+export function removeAllInstances(classString: string, classToRemove: string): string {
+  return classListToArray(classString)
+    .filter(cls => cls !== classToRemove)
+    .join(" ");
+}
+
+/**
+ * Counts the number of times a class appears in a class string.
+ */
+export function countClass(classString: string, className: string): number {
+  return classListToArray(classString).filter(cls => cls === className).length;
+}
