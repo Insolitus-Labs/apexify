@@ -245,3 +245,26 @@ export function removeAllInstances(classString: string, classToRemove: string): 
 export function countClass(classString: string, className: string): number {
   return classListToArray(classString).filter(cls => cls === className).length;
 }
+
+/**
+ * Replaces an old class with a new class in a class string.
+ */
+export function replaceClass(classString: string, oldClass: string, newClass: string): string {
+  return classListToArray(classString)
+    .map(cls => (cls === oldClass ? newClass : cls))
+    .join(" ");
+}
+
+/**
+ * Merges classes conditionally, adding or removing them based on a boolean condition.
+ */
+export function mergeClassConditionally(base: string, condition: boolean, conditionalClass: string): string {
+  return condition ? `${base} ${conditionalClass}` : base;
+}
+
+/**
+ * Filters out empty or undefined class names from a class string.
+ */
+export function filterEmptyClasses(classString: string): string {
+  return classString.split(/\s+/).filter(Boolean).join(" ");
+}
